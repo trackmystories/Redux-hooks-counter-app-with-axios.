@@ -21,7 +21,7 @@ export default function CounterComponent() {
   const getTotalCount = () => {
     setIsFetching(true);
 
-    let url = "https://url.firebaseio.com/<name>/.json"; // Get request
+    let url = "https://url.firebaseio.com<name>.json";
     axios
       .get(url)
       .then((res) => res.data)
@@ -31,15 +31,11 @@ export default function CounterComponent() {
   };
 
   const onSubmit = (counterState) => {
-    let url = "https://url.firebaseio.com/<name>/.json"; // Put request
+    let url = "https://url.firebaseio.com<name>.json";
     axios.put(url, counterState).then((response) => {
       console.log(response);
     });
   };
-
-  const obj = data;
-  const cloneTotal = { ...obj };
-  console.log(cloneTotal);
 
   return (
     <View style={styles.container}>
@@ -61,7 +57,7 @@ export default function CounterComponent() {
           <View>
             <Text style={styles.text}>
               Current state:
-              {cloneTotal.counter ? data.counter : counter}
+              {data.counter ? data.counter : counter}
             </Text>
           </View>
         )}
