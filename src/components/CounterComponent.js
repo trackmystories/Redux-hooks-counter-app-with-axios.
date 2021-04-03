@@ -21,7 +21,8 @@ export default function CounterComponent() {
   const getTotalCount = () => {
     setIsFetching(true);
 
-    let url = "https://url.firebaseio.com<name>.json";
+    let url =
+      "https://reduxcounter-2968f-default-rtdb.firebaseio.com/count.json";
     axios
       .get(url)
       .then((res) => res.data)
@@ -31,7 +32,8 @@ export default function CounterComponent() {
   };
 
   const onSubmit = (counterState) => {
-    let url = "https://url.firebaseio.com<name>.json";
+    let url =
+      "https://reduxcounter-2968f-default-rtdb.firebaseio.com/count.json";
     axios.put(url, counterState).then((response) => {
       console.log(response);
     });
