@@ -1,4 +1,4 @@
-#Redux counter with hooks and axios.
+# Redux counter with hooks and axios.
 
 <!-- ![App.png](./assets/App.png) -->
 <img src="./assets/App.png" width="350" alt="App.png">
