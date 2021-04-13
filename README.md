@@ -1,12 +1,6 @@
 # Redux counter with hooks and axios.
 
 
-##### Setup expo globally
-```
- yarn global add expo-cli
-```
-
-
 ##### Setup node modules
 ```
 yarn install
