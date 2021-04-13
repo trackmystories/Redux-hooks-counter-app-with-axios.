@@ -1,5 +1,22 @@
 # Redux counter with hooks and axios.
 
+
+##### Setup expo globally
+```
+ yarn global add expo-cli
+```
+
+
+##### Setup node modules
+```
+yarn install
+```
+
+##### Compiles and hot-reloads 
+```
+expo start
+```
+
 <!-- ![App.png](./assets/App.png) -->
 <img src="./assets/App.png" width="350" alt="App.png">
 
